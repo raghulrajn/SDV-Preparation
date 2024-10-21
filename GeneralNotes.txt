@@ -1,0 +1,12 @@
+Eclipse eCAL This is enhanced communication abstraction layer for inter process or inter host communication in a car. For eg ECU needs to speak with some other components, It can directly send data to the other components without any internal broker.(In case of MQTT, MQTT broker is in the centre of the transmission  - if broker fails, communication is failed). 
+
+Data is sent as gRPC format - protobuf. A standard version of data serializer/deserializer. Initial structure of the message is pre defined here and compiled using protobuf compiler, then used to share the data. 
+
+Eclipse Kuksa - This is a vehicle abstraction layer tool. This is used when vehicle data is need to be sent outside the vehicle. Each automotive maker uses their own standard, so to standardize this VSS(Vehicle signal specification) is used in Kuksa. 
+  VSS is the taxonomy of how to name a particular signal in the vehicle. 
+  A tree like structure is used to get the name of all the signal in the vehicle and this is standardised. 
+  Then whatever the CAN data, is converted to this common format through Kuksa and made available outside the vehicle. 
+
+Eclipse Velocitas - This is a complete CI/CD template which is used to build rapid  applications based on the data from kuksa databroker. 
+
+Eclipse Ankaios - Light weight kubernetes for automotive applivations. 

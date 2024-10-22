@@ -17,6 +17,8 @@ Hello all, I have created this repository to colloborate for our [Hackathon](htt
 - ThreadX
 - And others
 
+## Sample flow
+![flow](/src/flow.jpeg)
 ## Links to find applications
 [digital.auto](https://www.digital.auto/use-cases)
 

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb.VideoStream;
+
+message VideoFrame {
+    bytes frame_data = 1;  // Encoded video frame (e.g., JPEG, H.264)
+    int32 width = 2;       // Width of the frame
+    int32 height = 3;      // Height of the frame
+    int64 timestamp = 4;   // Timestamp of the frame
+}
+
+message VideoStream {
+    repeated VideoFrame frames = 1; // List of video frames
+}

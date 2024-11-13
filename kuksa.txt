@@ -1,0 +1,2 @@
+docker network create kuksa
+docker run --rm -it -p 55555:55555 ghcr.io/eclipse-kuksa/kuksa-databroker:main --insecure

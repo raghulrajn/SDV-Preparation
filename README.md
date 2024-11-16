@@ -17,6 +17,13 @@ Hello all, I have created this repository to colloborate for our [Hackathon](htt
 - ThreadX
 - And others
 
+## To run kuksa databroker
+
+```
+cd kuksa-databroker
+cargo run --bin databroker -- --metadata data/vss-core/vss_release_4.0.json --insecure
+```
+
 ## Sample flow
 ![flow](/src/flow.jpeg)
 ## Links to find applications

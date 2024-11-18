@@ -24,6 +24,15 @@ cd kuksa-databroker
 cargo run --bin databroker -- --metadata data/vss-core/vss_release_4.0.json --insecure
 ```
 
+## To install bluechi
+```
+git clone https://github.com/eclipse-bluechi/bluechi.git
+cd bluechi
+meson setup builddir
+meson configure -Dwith_selinux=false builddir
+meson compile -C builddir
+```
+
 ## Sample flow
 ![flow](/src/flow.jpeg)
 ## Links to find applications

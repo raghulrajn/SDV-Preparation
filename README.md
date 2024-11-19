@@ -33,6 +33,16 @@ meson configure -Dwith_selinux=false builddir
 meson compile -C builddir
 ```
 
+## Clone Ankaois tutorial 
+```
+git init ankaios
+cd ankaios
+git remote add origin https://github.com/eclipse-ankaios/ankaios.git
+git sparse-checkout init --cone
+git sparse-checkout set tools/tutorial_fleet_management
+git pull origin main
+```
+
 ## Sample flow
 ![flow](/src/flow.jpeg)
 ## Links to find applications
